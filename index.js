@@ -86,6 +86,6 @@ const invalidEndPoint = (request, response) => {
 }
 app.use(invalidEndPoint)
 
-const PORT = 3001;
-// const PORT = process.env.PORT || 3001;
+// const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`app is running on this ${PORT}`));
